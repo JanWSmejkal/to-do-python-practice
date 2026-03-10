@@ -8,10 +8,15 @@ while input != "quit":
         case "add":
             todo = input("Enter a todo: ")
             todos.append(todo)
-        case "show":
+        case "show" | "display" | "print":
             for item in todos:
-                print(item.capitalize())
+                item = item.title()
+                print(item)
         case "exit":
             break
+        case x:
+            print("Sorry, Unknown command.")
+
+
 
 print("Bye!")
