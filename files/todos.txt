@@ -1,0 +1,4 @@
+clean
+show
+three
+play
